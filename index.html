@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Gemini 3.5 - L'Intelligence Multimodale Absolue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient background orbs -->
+    <div class="ambient-container">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Header / Nav -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo-link">
+                <!-- Glowing Gemini Star SVG -->
+                <svg class="logo-icon" viewBox="0 0 100 100">
+                    <defs>
+                        <linearGradient id="gemini-logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#4285f4" />
+                            <stop offset="50%" stop-color="#ab47bc" />
+                            <stop offset="100%" stop-color="#f06292" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M50,15 C50,34.3 65.7,50 85,50 C65.7,50 50,65.7 50,85 C50,65.7 34.3,50 15,50 C34.3,50 50,34.3 50,15 Z" fill="url(#gemini-logo-grad)" />
+                    <path d="M50,35 C50,43.3 56.7,50 65,50 C56.7,50 50,56.7 50,65 C50,56.7 43.3,50 35,50 C43.3,50 50,43.3 50,35 Z" fill="#ffffff" opacity="0.8" />
+                </svg>
+                <span>Gemini <span class="glow-text" style="font-weight: 800;">3.5</span></span>
+            </a>
+            
+            <nav>
+                <ul class="nav-links" id="nav-menu">
+                    <li><a href="#features">Fonctionnalités</a></li>
+                    <li><a href="#playground">Playground</a></li>
+                    <li><a href="#architecture">Architecture MoE</a></li>
+                    <li><a href="#models">Modèles</a></li>
+                </ul>
+            </nav>
+
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <a href="#playground" class="cta-btn">Essayer l'API</a>
+                <button class="menu-toggle" id="mobile-menu-btn" aria-label="Ouvrir le menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">
+                <span class="hero-badge-pulse"></span>
+                <span>Google AI Next-Gen • Disponible en préversion</span>
+            </div>
+            <h1>
+                Au-delà des frontières de l'IA.<br>
+                Découvrez <span class="glow-text">Gemini 3.5</span>.
+            </h1>
+            <p>
+                Le premier modèle d'intelligence artificielle doté d'un moteur de raisonnement à Mixture of Experts dynamique, d'une fenêtre de contexte de 10 millions de tokens et d'une multimodalité native en temps réel.
+            </p>
+            <div class="hero-buttons">
+                <a href="#playground" class="btn btn-primary">Lancer le Playground</a>
+                <a href="#features" class="btn btn-secondary">Découvrir les capacités</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="section-tag">Performances Révolutionnaires</span>
+                <h2 class="section-title">Une architecture conçue pour l'excellence</h2>
+                <p class="section-desc">Gemini 3.5 redéfinit l'état de l'art technologique grâce à des percées fondamentales en apprentissage profond.</p>
+            </div>
+
+            <div class="grid-features">
+                <!-- Feature 1: Multimodalité native -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon" viewBox="0 0 24 24">
+                            <defs>
+                                <linearGradient id="gemini-svg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#4285f4" />
+                                    <stop offset="100%" stop-color="#ab47bc" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12C20,13.75 19.46,15.37 18.55,16.71L16.29,14.39C16.74,13.68 17,12.87 17,12A5,5 0 0,0 12,7C11.13,7 10.32,7.26 9.61,7.71L7.29,5.45C8.63,4.54 10.25,4 12,4M7.71,9.61L14.39,16.29C13.68,16.74 12.87,17 12,17A5,5 0 0,1 7,12C7,11.13 7.26,10.32 7.71,9.61Z" />
+                        </svg>
+                    </div>
+                    <h3>Multimodalité Native Avancée</h3>
+                    <p>Gemini 3.5 n'est pas simplement un modèle textuel sur lequel on a branché des modules. Il traite et synthétise le texte, le code, l'audio, la vidéo et les images de manière unifiée et simultanée.</p>
+                </div>
+
+                <!-- Feature 2: Contexte géant -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon" viewBox="0 0 24 24">
+                            <path d="M19,19H5V5H19M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,14L15,10H13V7H11V10H9L12,14M7,16H17V15H7V16Z" />
+                        </svg>
+                    </div>
+                    <h3>Contexte de 10M de Tokens</h3>
+                    <p>Analysez d'un coup plus de 20 heures d'audio, 5 heures de vidéo 4K, 100 000 lignes de code ou des dizaines de livres académiques entiers sans aucune perte de précision ou d'attention.</p>
+                </div>
+
+                <!-- Feature 3: Raisonnement critique -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon" viewBox="0 0 24 24">
+                            <path d="M12,3c-4.97,0-9,4.03-9,9c0,2.12,0.74,4.07,1.97,5.61L4.35,19.4c-0.39,0.39-0.39,1.02,0,1.41c0.39,0.39,1.02,0.39,1.41,0l1.9-1.9C9.04,19.53,10.47,20,12,20c4.97,0,9-4.03,9-9S16.97,3,12,3z M12,18c-3.31,0-6-2.69-6-6s2.69-6,6-6s6,2.69,6,6S15.31,18,12,18z M11,14h2v2h-2V14z M11,8h2v4h-2V8z" />
+                        </svg>
+                    </div>
+                    <h3>Raisonnement Complexe en Cascade</h3>
+                    <p>Grâce à son moteur de réflexion systémique, Gemini 3.5 est capable de formuler des hypothèses, de s'auto-corriger et de résoudre des problèmes scientifiques hautement abstraits étape par étape.</p>
+                </div>
+
+                <!-- Feature 4: Agentic Autonomy -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon" viewBox="0 0 24 24">
+                            <path d="M12,2a10,10 0 0,0-10,10a10,10 0 0,0,10,10a10,10 0 0,0,10-10A10,10 0 0,0,12,2M12,4a8,8 0 0,1,8,8c0,1.82-.6,3.5-1.63,4.86l-1.42-1.42a6,6 0 0,0,1.05-3.44H16A4,4 0 0,1,12,16v2a6,6 0 0,0,6-6h2a8,8 0 0,1-8,8A8,8 0 0,1,4,12C4,9.6,5.05,7.45,6.71,6l1.42,1.42A6,6 0 0,0,7,12H9A3,3 0 0,1,12,9V7a5,5 0 0,0-5,5H5A7,7 0 0,1,12,5V4a8,8 0 0,1,8,8A8,8 0 0,1,12,20a8,8 0 0,1-8-8A8,8 0 0,1,12,4V2Z" />
+                        </svg>
+                    </div>
+                    <h3>Agents Autonomes Avancés</h3>
+                    <p>Déployez des micro-agents capables d'explorer votre codebase, d'interagir avec vos bases de données, d'exécuter des tests, et de résoudre des anomalies de bout en bout de manière autonome.</p>
+                </div>
+
+                <!-- Feature 5: Mixture of Experts -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon" viewBox="0 0 24 24">
+                            <path d="M15,4V11H21V4H15M17,6H19V9H17V6M3,12V19H9V12H3M5,14H7V17H5V14M11,17V21H13V17H11M11,13V15H13V13H11M11,9V11H13V9H11M11,5V7H13V5H11M15,13V20H21V13H15M17,15H19V18H17V15M3,3V10H9V3H3M5,5H7V8H5V5Z" />
+                        </svg>
+                    </div>
+                    <h3>Mixture of Experts Dynamique</h3>
+                    <p>Plutôt que d'activer ses milliards de paramètres pour chaque requête, Gemini 3.5 utilise un routeur neuronal pour n'activer que les "experts" les plus adaptés, réduisant ainsi les temps de réponse.</p>
+                </div>
+
+                <!-- Feature 6: Sécurité & Alignement -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon" viewBox="0 0 24 24">
+                            <path d="M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1Z" />
+                        </svg>
+                    </div>
+                    <h3>Garde-fous Éthiques Intégrés</h3>
+                    <p>Équipé de protocoles de sécurité avancés et d'évaluation continue contre les cybermenaces et les biais systémiques, Gemini 3.5 offre une fiabilité de niveau entreprise sans compromis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demonstration / Playground -->
+    <section class="playground" id="playground">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="section-tag">Démonstration Live</span>
+                <h2 class="section-title">Testez Gemini 3.5 en conditions réelles</h2>
+                <p class="section-desc">Sélectionnez un scénario complexe à gauche pour observer la vitesse de raisonnement et l'analyse multimodale native du modèle.</p>
+            </div>
+
+            <div class="playground-window">
+                <div class="window-header">
+                    <div class="window-dots">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+                    <div class="window-title">Gemini-3.5-pro-preview / Console</div>
+                    <div class="window-badge">ACTIF</div>
+                </div>
+
+                <div class="playground-body">
+                    <div class="sidebar-prompts">
+                        <button class="prompt-btn active" onclick="loadPrompt('video')">
+                            <div class="prompt-btn-title">
+                                <span>🎥</span> Vidéo Drone 4K
+                            </div>
+                            <div class="prompt-btn-desc">Analyse thermique et prédiction de pannes en millisecondes.</div>
+                        </button>
+                        
+                        <button class="prompt-btn" onclick="loadPrompt('code')">
+                            <div class="prompt-btn-title">
+                                <span>💻</span> Agent de Codage
+                            </div>
+                            <div class="prompt-btn-desc">Génération d'API et architecture de base de données.</div>
+                        </button>
+
+                        <button class="prompt-btn" onclick="loadPrompt('math')">
+                            <div class="prompt-btn-title">
+                                <span>📐</span> Raisonnement Scientifique
+                            </div>
+                            <div class="prompt-btn-desc">Analyse mathématique formelle et résolution complexe.</div>
+                        </button>
+                    </div>
+
+                    <div class="chat-area">
+                        <div class="chat-history" id="chat-history-container">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+
+                        <div class="chat-input-bar">
+                            <input type="text" id="user-input-box" placeholder="Posez une question multimodale à Gemini 3.5..." readonly>
+                            <button class="send-btn" id="send-message-btn" aria-label="Envoyer" disabled>
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section / Mixture of Experts -->
+    <section class="architecture" id="architecture">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="section-tag">Sous le capot</span>
+                <h2 class="section-title">L'Architecture Mixture of Experts</h2>
+                <p class="section-desc">Visualisez comment le routeur neuronal distribue les requêtes de manière intelligente aux réseaux de neurones experts spécialisés.</p>
+            </div>
+
+            <div class="moe-visual-container">
+                <div class="moe-grid">
+                    <div class="moe-text">
+                        <h3>Comment fonctionne le routage dynamique ?</h3>
+                        <p>Plutôt que d'utiliser un modèle monolithique lourd et coûteux, Gemini 3.5 utilise un répartiteur haute vitesse qui analyse le type de données d'entrée (images, code, équations, langage naturel) et active en temps réel un sous-ensemble d'experts ciblés.</p>
+                        
+                        <ul class="expert-list">
+                            <li class="expert-item">
+                                <div class="expert-bullet">1</div>
+                                <div class="expert-desc">
+                                    <h4>Routeur de Flux (Gate)</h4>
+                                    <p>Analyse sémantiquement les tokens et détermine la spécialité mathématique, logique, visuelle ou linguistique requise.</p>
+                                </div>
+                            </li>
+                            <li class="expert-item">
+                                <div class="expert-bullet">2</div>
+                                <div class="expert-desc">
+                                    <h4>Experts Dédiés (Feed-Forward Networks)</h4>
+                                    <p>Chaque sous-réseau est entraîné de manière intensive sur un domaine spécifique, maximisant la qualité des réponses tout en minimisant la consommation énergétique.</p>
+                                </div>
+                            </li>
+                            <li class="expert-item">
+                                <div class="expert-bullet">3</div>
+                                <div class="expert-desc">
+                                    <h4>Agrégateur Linéaire</h4>
+                                    <p>Compile les prédictions des experts pour générer une réponse fluide, harmonieuse et cohérente.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="moe-diagram" id="diagram-container">
+                        <svg class="svg-lines" viewBox="0 0 400 300" id="lines-svg">
+                            <defs>
+                                <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#4285f4" />
+                                    <stop offset="50%" stop-color="#ab47bc" />
+                                    <stop offset="100%" stop-color="#f06292" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Connection paths will be updated dynamically/simulated with responsive logic -->
+                            <path id="path-expert-1" d="M200,80 L80,160" />
+                            <path id="path-expert-2" d="M200,80 L200,160" />
+                            <path id="path-expert-3" d="M200,80 L320,160" />
+                            <path id="path-out-1" d="M80,185 L200,250" />
+                            <path id="path-out-2" d="M200,185 L200,250" />
+                            <path id="path-out-3" d="M320,185 L200,250" />
+                        </svg>
+
+                        <!-- Input layer -->
+                        <div class="diag-node input-node">Requête Multimodale</div>
+
+                        <!-- Routing gate -->
+                        <div class="diag-node router-node">Routeur Intelligent (Gate)</div>
+
+                        <!-- Experts row -->
+                        <div class="experts-row">
+                            <div class="diag-node expert-node" id="node-expert-1">Expert Vision & Audio</div>
+                            <div class="diag-node expert-node" id="node-expert-2">Expert Code & Algorithmes</div>
+                            <div class="diag-node expert-node" id="node-expert-3">Expert Logique & Math</div>
+                        </div>
+
+                        <!-- Output layer -->
+                        <div class="diag-node output-node">Réponse Consolidée</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Comparison Section -->
+    <section class="models" id="models">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="section-tag">Gamme de Modèles</span>
+                <h2 class="section-title">Un modèle adapté à chaque défi</h2>
+                <p class="section-desc">De la rapidité extrême à la recherche scientifique de pointe, choisissez le format optimal pour votre infrastructure.</p>
+            </div>
+
+            <div class="models-grid">
+                <!-- Gemini 3.5 Flash -->
+                <div class="model-card">
+                    <h3 class="model-name">Gemini 3.5 Flash</h3>
+                    <p class="model-desc">Le parfait équilibre entre vitesse d'inférence exceptionnelle, coût minimal et hautes performances multimodales.</p>
+                    <div class="model-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Contexte</span>
+                            <span class="spec-val">1M Tokens</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Temps de latence</span>
+                            <span class="spec-val">&lt; 100 ms</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Spécialité</span>
+                            <span class="spec-val">Streaming, Traduction live</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Tarification (API)</span>
+                            <span class="spec-val">Économique</span>
+                        </div>
+                    </div>
+                    <a href="#playground" class="btn btn-secondary">Déployer Flash</a>
+                </div>
+
+                <!-- Gemini 3.5 Pro -->
+                <div class="model-card featured">
+                    <span class="featured-tag">Recommandé</span>
+                    <h3 class="model-name">Gemini 3.5 Pro</h3>
+                    <p class="model-desc">Le modèle phare pour les tâches de codage, de raisonnement complexe et d'analyse de bases de données de taille infinie.</p>
+                    <div class="model-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Contexte</span>
+                            <span class="spec-val">10M Tokens</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Temps de latence</span>
+                            <span class="spec-val">Ultra-rapide (Routé MoE)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Spécialité</span>
+                            <span class="spec-val">Agents de codage, R&D</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Tarification (API)</span>
+                            <span class="spec-val">Standard pro</span>
+                        </div>
+                    </div>
+                    <a href="#playground" class="btn btn-primary">Essayer Pro</a>
+                </div>
+
+                <!-- Gemini 3.5 Ultra -->
+                <div class="model-card">
+                    <h3 class="model-name">Gemini 3.5 Ultra</h3>
+                    <p class="model-desc">Puissance brute inégalée pour résoudre de manière probabiliste et déterministe les plus grands défis de l'humanité.</p>
+                    <div class="model-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Contexte</span>
+                            <span class="spec-val">20M Tokens</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Temps de latence</span>
+                            <span class="spec-val">Optimisé par grappes TPU</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Spécialité</span>
+                            <span class="spec-val">Médecine, Physique quantique</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Tarification (API)</span>
+                            <span class="spec-val">Sur mesure / Cloud Dédié</span>
+                        </div>
+                    </div>
+                    <a href="#playground" class="btn btn-secondary">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="bottom-cta">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Démarrez dès aujourd'hui</h2>
+                <p>Intégrez l'intelligence de Gemini 3.5 dans vos flux de travail et développez des applications révolutionnaires sans limite d'imagination.</p>
+                <a href="#playground" class="btn btn-primary">Créer un compte Google AI Studio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="#" class="logo-link" style="margin-bottom: 1.5rem;">
+                        <svg class="logo-icon" viewBox="0 0 100 100" style="width: 24px; height: 24px;">
+                            <path d="M50,15 C50,34.3 65.7,50 85,50 C65.7,50 50,65.7 50,85 C50,65.7 34.3,50 15,50 C34.3,50 50,34.3 50,15 Z" fill="url(#gemini-logo-grad)" />
+                        </svg>
+                        <span>Gemini 3.5</span>
+                    </a>
+                    <p>Façonner l'avenir de l'informatique cognitive grâce à la recherche responsable et à des architectures d'apprentissage profond à l'échelle planétaire.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Produits</h4>
+                    <ul>
+                        <li><a href="#">Google AI Studio</a></li>
+                        <li><a href="#">Vertex AI Platform</a></li>
+                        <li><a href="#">Gemini API</a></li>
+                        <li><a href="#">TPU v6 Acceleration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="#">Documentation API</a></li>
+                        <li><a href="#">Rapport de recherche</a></li>
+                        <li><a href="#">Blog Google DeepMind</a></li>
+                        <li><a href="#">GitHub d'exemples</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="#">À propos de Google</a></li>
+                        <li><a href="#">Principes de l'IA</a></li>
+                        <li><a href="#">Sécurité & Confidentialité</a></li>
+                        <li><a href="#">Carrières DeepMind</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Google AI & DeepMind. Tous droits réservés.</p>
+                <div style="display: flex; gap: 1.5rem;">
+                    <a href="#" style="color: inherit; text-decoration: none;">Conditions</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">Confidentialité</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JS Scripts -->
+    <script>
+        // Interactive Card Spotlight Hover Effect (tracks mouse inside cards)
+        document.querySelectorAll('.feature-card, .model-card, .cta-box').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+
+        // Mobile Menu Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+            
+            // Toggle hamburger icon animation
+            const spans = mobileMenuBtn.querySelectorAll('span');
+            if (mobileMenuBtn.classList.contains('active')) {
+                spans[0].style.transform = 'rotate(45deg) translate(6px, 6px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+            } else {
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            }
+        });
+
+        // Close mobile menu when link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+                const spans = mobileMenuBtn.querySelectorAll('span');
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            });
+        });
+
+        // Simulated Multimodal Gemini 3.5 Playground data
+        const playgroundData = {
+            video: {
+                userPrompt: "Analyse ce flux vidéo de drone de surveillance 4K en temps réel et prédis d'éventuelles failles.",
+                attachment: {
+                    type: "video",
+                    name: "drone_thermal_east_wing.mp4"
+                },
+                responses: [
+                    "Analyse de flux démarrée... [2160p, 120 fps, 10-bit HDR]",
+                    "<strong>[Rapport de Détection Automatique]</strong><br><br>À la seconde 14, je détecte un incrément thermique brusque (+18°C/sec) sur l'isolateur céramique de la ligne à haute tension secondaire (Secteur de l'Aile Est).<br><br><strong>Recommandations d'urgence :</strong><br>1. Isolement logique de la grille de distribution E-4.<br>2. Routage de secours automatique vers le système de refroidissement liquide d'appoint.<br><br>J'ai déjà préparé un script d'exécution d'urgence Ansible pour votre console de contrôle. Souhaitez-vous que je l'exécute ?"
+                ]
+            },
+            code: {
+                userPrompt: "Rédige une architecture complète d'agent autonome de codage qui prend notre spécification de 2.5 millions de tokens, analyse le code, détecte les bugs et propose des PRs.",
+                attachment: {
+                    type: "document",
+                    name: "full_project_spec_2.5M_tokens.pdf"
+                },
+                responses: [
+                    "Modèle chargé avec 2,5M de tokens de contexte (utilisation mémoire : 0.04%)...",
+                    "J'ai analysé l'architecture de votre projet. Pour créer cet agent de codage autonome, nous allons implémenter une boucle de raisonnement de type <strong>MCTS (Monte Carlo Tree Search)</strong> combinée à des experts dédiés.<br><br>Voici le squelette de l'agent en TypeScript moderne avec Dockerisation automatique des bacs à sable d'exécution :<br><br><pre style='background: rgba(0,0,0,0.4); padding: 1rem; border-radius: 8px; margin: 1rem 0; overflow-x: auto; font-family: monospace; font-size: 0.85rem; color: #a5d6ff;'>class CodingAgent {\n  private routingGate: RouterGate;\n  \n  async analyzeCodebase(repoPath: string) {\n    const AST = await Parser.buildAST(repoPath);\n    const vulnerabilities = await this.routingGate.findFlaws(AST);\n    return this.generateFixes(vulnerabilities);\n  }\n}</pre>Voulez-vous que je lance la génération des microservices Docker d'accompagnement ?"
+                ]
+            },
+            math: {
+                userPrompt: "Peux-tu analyser cette formulation d'équations de Navier-Stokes et me donner une approximation de résolution numérique par éléments finis ?",
+                attachment: {
+                    type: "formula",
+                    name: "navier_stokes_differential.tex"
+                },
+                responses: [
+                    "Rendu du code LaTeX et compilation symbolique complétés.",
+                    "En appliquant une décomposition de Mixture of Experts (activation des neurones Experts Math et Expert Physique Théorique), nous pouvons formuler l'approximation par éléments finis de la pression et du champ de vitesse (formulation de Taylor-Hood P2-P1).<br><br><strong>Formulation faible résolue :</strong><br>Pour garantir la stabilité inf-sup (condition de Babuška-Brezzi), nous utilisons des espaces de Hilbert stables.<br><br>Voici l'implémentation de la boucle d'itération principale sous <strong>FEniCS/Python</strong> pour votre simulation physique :<br><br><pre style='background: rgba(0,0,0,0.4); padding: 1rem; border-radius: 8px; margin: 1rem 0; overflow-x: auto; font-family: monospace; font-size: 0.85rem; color: #a5d6ff;'># Résolution de la vitesse et de la pression\na = (inner(grad(u), grad(v))*dx + inner(grad(u)*u, v)*dx\n     - p*div(v)*dx + div(u)*q*dx)\nL = inner(f, v)*dx\nsolve(a == L, w, bcs)</pre>La convergence asymptotique est garantie pour un nombre de Reynolds Re &lt; 2500."
+                ]
+            }
+        };
+
+        const chatHistoryContainer = document.getElementById('chat-history-container');
+
+        // Function to animate the typing indicator and responses
+        function loadPrompt(promptKey) {
+            // Update active state in sidebar buttons
+            document.querySelectorAll('.prompt-btn').forEach(btn => btn.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+
+            const data = playgroundData[promptKey];
+            chatHistoryContainer.innerHTML = ''; // Clear chat
+
+            // 1. Append User Message with attachment if exists
+            const userBubble = document.createElement('div');
+            userBubble.className = 'chat-bubble user';
+            
+            let attachmentHtml = '';
+            if (data.attachment) {
+                let icon = '📄';
+                if (data.attachment.type === 'video') icon = '🎥';
+                if (data.attachment.type === 'formula') icon = '📐';
+                attachmentHtml = `
+                    <div class="multimodal-attachment">
+                        <span>${icon}</span>
+                        <span>${data.attachment.name}</span>
+                    </div>
+                `;
+            }
+
+            userBubble.innerHTML = `
+                <div class="chat-avatar user-av">U</div>
+                <div>
+                    ${attachmentHtml}
+                    <div class="bubble-content">${data.userPrompt}</div>
+                </div>
+            `;
+            chatHistoryContainer.appendChild(userBubble);
+            scrollChat();
+
+            // 2. Append Gemini Typing Indicator
+            const geminiBubble = document.createElement('div');
+            geminiBubble.className = 'chat-bubble gemini';
+            geminiBubble.innerHTML = `
+                <div class="chat-avatar gemini-av">G</div>
+                <div class="bubble-content" id="gemini-typing-box">
+                    <div class="typing-indicator">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            `;
+            chatHistoryContainer.appendChild(geminiBubble);
+            scrollChat();
+
+            // Highlight expert nodes during "thinking"
+            simulateExpertRouting(promptKey);
+
+            // 3. Populate responses sequentially
+            setTimeout(() => {
+                const typingBox = document.getElementById('gemini-typing-box');
+                if (typingBox) {
+                    typingBox.innerHTML = `<span style="color: var(--text-muted); font-size: 0.85rem; font-style: italic;">${data.responses[0]}</span>`;
+                }
+                scrollChat();
+
+                setTimeout(() => {
+                    if (typingBox) {
+                        typingBox.innerHTML = `
+                            <div style="margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.85rem; font-style: italic;">${data.responses[0]}</div>
+                            <div>${data.responses[1]}</div>
+                        `;
+                    }
+                    scrollChat();
+                }, 1800);
+
+            }, 1200);
+        }
+
+        function scrollChat() {
+            chatHistoryContainer.scrollTop = chatHistoryContainer.scrollHeight;
+        }
+
+        // Simulate Neural routing (MoE) in the diagram
+        function simulateExpertRouting(promptKey) {
+            // Reset active experts
+            document.querySelectorAll('.expert-node').forEach(node => {
+                node.classList.remove('active');
+            });
+            
+            // Remove active SVG lines classes
+            const linesSvg = document.getElementById('lines-svg');
+            const paths = linesSvg.querySelectorAll('path');
+            paths.forEach(p => p.classList.remove('active-path'));
+
+            // Activate relevant expert and line paths based on the prompt type
+            if (promptKey === 'video') {
+                const node = document.getElementById('node-expert-1');
+                node.classList.add('active');
+                document.getElementById('path-expert-1').classList.add('active-path');
+                document.getElementById('path-out-1').classList.add('active-path');
+            } else if (promptKey === 'code') {
+                const node = document.getElementById('node-expert-2');
+                node.classList.add('active');
+                document.getElementById('path-expert-2').classList.add('active-path');
+                document.getElementById('path-out-2').classList.add('active-path');
+            } else if (promptKey === 'math') {
+                const node = document.getElementById('node-expert-3');
+                node.classList.add('active');
+                document.getElementById('path-expert-3').classList.add('active-path');
+                document.getElementById('path-out-3').classList.add('active-path');
+            }
+        }
+
+        // Initialize with default 'video' prompt
+        window.addEventListener('DOMContentLoaded', () => {
+            loadPrompt('video');
+            
+            // Periodically pulse or rotate routing pathways when in idle to make diagram dynamic
+            setInterval(() => {
+                const activeBtn = document.querySelector('.prompt-btn.active');
+                // just refresh current simulated route lines pulsing
+                if (activeBtn) {
+                    if (activeBtn.outerHTML.includes('video')) {
+                        simulateExpertRouting('video');
+                    } else if (activeBtn.outerHTML.includes('code')) {
+                        simulateExpertRouting('code');
+                    } else if (activeBtn.outerHTML.includes('math')) {
+                        simulateExpertRouting('math');
+                    }
+                }
+            }, 6000);
+        });
+    </script>
+</body>
+</html>
